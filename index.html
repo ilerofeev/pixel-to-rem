@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:500" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></link>
+	<title>Document</title>
+</head>
+<body>
+	<div id="app">
+		<label for="font-size">Default font-size</label>
+		<input type="number" name="font-size" v-model.number="fontSize"><br>
+		<label for="valuePx">Value in pixels</label>
+		<input type="number" name="valuePx" v-model.number="valuePx"><br>
+		<label>Result in rem</label><span>{{ valueRem }}</span>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
