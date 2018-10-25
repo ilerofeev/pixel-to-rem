@@ -2,19 +2,91 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Dosis:500" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></link>
-	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<title>Px to rem calculator</title>
 </head>
 <body>
 	<div id="app">
-		<label for="font-size">Default font-size</label>
-		<input type="number" name="font-size" v-model.number="fontSize"><br>
-		<label for="valuePx">Value in pixels</label>
-		<input type="number" name="valuePx" v-model.number="valuePx"><br>
-		<label>Result in rem</label><span>{{ valueRem }}</span>
+		<div class="wrapper">
+			<h1>Pixel to rem calculator</h1>
+			<p>This app is intended to convert pixels to rems and back. Just set your default font-size and change value of px or rem. You can also see the table with ready values for selected font-size.</p>
+			<div class="row calculate">
+				<div class="col-3" style="position: relative;">
+					<label for="pxValue">px to rem</label><br>
+					<input type="number" min=1 name="pxValue" v-model.number="pxValue">
+				</div>
+				<div class="col-3">
+					<label for="remValue">rem to px</label><br>
+					<input type="number" min=1 name="remValue" v-model.number="remValue">
+				</div>
+				<div class="col-3">
+					<label for="fontSize">:root font-size</label><br>
+					<input type="number" min=1 name="fontSize" v-model.number="fontSize"><br>
+				</div>
+			</div>
+			<div class="row tables">
+				<table class="col-2">
+					<thead>
+						<tr>
+							<th>px</th>
+							<th>rem</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr v-for="item in columnOne">
+							<td>{{ item.px }}</td>
+							<td>{{ parseFloat((item.px / fontSize).toFixed(4)) }}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="col-2">
+					<thead>
+						<tr>
+							<th>px</th>
+							<th>rem</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr v-for="item in columnTwo">
+							<td>{{ item.px }}</td>
+							<td>{{ parseFloat((item.px / fontSize).toFixed(4)) }}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="col-2">
+					<thead>
+						<tr>
+							<th>px</th>
+							<th>rem</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr v-for="item in columnThree">
+							<td>{{ item.px }}</td>
+							<td>{{ parseFloat((item.px / fontSize).toFixed(4)) }}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="col-2">
+					<thead>
+						<tr>
+							<th>px</th>
+							<th>rem</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr v-for="item in columnFour">
+							<td>{{ item.px }}</td>
+							<td>{{ parseFloat((item.px / fontSize).toFixed(4)) }}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
 
 	<script src="script.js"></script>

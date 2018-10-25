@@ -1,21 +1,105 @@
-body, html {
-	padding: 0;
-	margin: 0;
+body,
+html
+{
+		margin: 0;
+		padding: 0;
 }
-#app {
-	font-size: 28px;
-	width: 100vw;
-	height: 100vh;
-	background: linear-gradient(#3bba83, #37495f);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: white;
+#app
+{
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+
+		display: flex;
+
+		width: 100vw;
+		height: 100vh;
+
+		background-color: #191a1d;
+
+		justify-content: center;
+		align-items: center;
 }
-#app input {
-	font-size: 24px;
-	border-style: none;
-	width: 70px;
-	text-align: center;
+label
+{
+		font-size: 20px;
+		font-weight: 700;
+}
+.calculate div
+{
+		text-align: center;
+}
+.wrapper
+{
+		width: 820px;
+		min-width: 820px;
+		height: 575px;
+		min-height: 575px;
+		padding: 10px 10px 25px 10px;
+
+		color: white;
+		background-color: #32333b;
+}
+p
+{
+		font-size: 18px;
+
+		margin: 0 40px 0 40px;
+
+		text-align: center;
+}
+.row
+{
+		justify-content: center;
+}
+.wrapper .row input
+{
+		font-size: 22px;
+
+		width: 120px;
+		margin-top: 15px;
+
+		text-align: center;
+
+		border-style: none;
+		border-radius: 2px;
+		outline: none;
+		background: linear-gradient(#eee, #fff);
+}
+.tables
+{
+		font-size: 16px;
+
+		display: flex;
+
+		margin-top: 40px;
+
+		justify-content: space-around;
+}
+table
+{
+		background-color: #47484f;
+}
+tr
+{
+		border-top: 1px solid #1d1e21;
+		border-bottom: 1px solid #1d1e21;
+}
+thead tr
+{
+		border-top-style: none;
+}
+tr:last-child
+{
+		border-bottom-style: none;
+}
+td,
+th
+{
+		padding-left: 22px;
+}
+h1
+{
+		font-size: 30px !important;
+
+		text-align: center;
 }
