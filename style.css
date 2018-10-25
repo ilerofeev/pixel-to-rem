@@ -1,105 +1,75 @@
-body,
-html
-{
-		margin: 0;
-		padding: 0;
+body, html {
+	margin: 0;
+	padding: 0;
 }
-#app
-{
-		font-family: 'Lato', sans-serif;
-		font-weight: 400;
-
-		display: flex;
-
-		width: 100vw;
-		height: 100vh;
-
-		background-color: #191a1d;
-
-		justify-content: center;
-		align-items: center;
+h1 {
+	font-size: 30px !important;
+	text-align: center;
+	margin: 5px 0 12px 0 !important;
 }
-label
-{
-		font-size: 20px;
-		font-weight: 700;
+p {
+	font-size: 18px;
+	margin: 0 40px;
+	text-align: center;
 }
-.calculate div
-{
-		text-align: center;
+label {
+	font-size: 20px;
+	font-weight: 700;
 }
-.wrapper
-{
-		width: 820px;
-		min-width: 820px;
-		height: 575px;
-		min-height: 575px;
-		padding: 10px 10px 25px 10px;
-
-		color: white;
-		background-color: #32333b;
+table {
+	background-color: #47484f;
 }
-p
-{
-		font-size: 18px;
-
-		margin: 0 40px 0 40px;
-
-		text-align: center;
+thead tr {
+	border-top-style: none;
 }
-.row
-{
-		justify-content: center;
+tr {
+	border-top: 1px solid #1d1e21;
+	border-bottom: 1px solid #1d1e21;
+} 
+tr:last-child {
+	border-bottom-style: none;
 }
-.wrapper .row input
-{
-		font-size: 22px;
-
-		width: 120px;
-		margin-top: 15px;
-
-		text-align: center;
-
-		border-style: none;
-		border-radius: 2px;
-		outline: none;
-		background: linear-gradient(#eee, #fff);
+td, th {
+	padding-left: 22px;
 }
-.tables
-{
-		font-size: 16px;
-
-		display: flex;
-
-		margin-top: 40px;
-
-		justify-content: space-around;
+#app {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	background-color: #191a1d;
+	justify-content: center;
+	align-items: center;
 }
-table
-{
-		background-color: #47484f;
+.calculate div {
+	text-align: center;
 }
-tr
-{
-		border-top: 1px solid #1d1e21;
-		border-bottom: 1px solid #1d1e21;
+.wrapper {
+	width: 820px;
+	min-width: 820px;
+	height: 575px;
+	min-height: 575px;
+	padding: 10px 10px 25px 10px;
+	color: white;
+	background-color: #32333b;
 }
-thead tr
-{
-		border-top-style: none;
+.row {
+	justify-content: center;
 }
-tr:last-child
-{
-		border-bottom-style: none;
+.wrapper .row input {
+	font-size: 22px;
+	width: 120px;
+	margin-top: 5px;
+	text-align: center;
+	border-style: none;
+	border-radius: 2px;
+	outline: none;
+	background: linear-gradient(#eee, #fff);
 }
-td,
-th
-{
-		padding-left: 22px;
-}
-h1
-{
-		font-size: 30px !important;
-
-		text-align: center;
+.tables {
+	font-size: 16px;
+	display: flex;
+	margin-top: 40px;
+	justify-content: space-around;
 }
