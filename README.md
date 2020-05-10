@@ -1,5 +1,5 @@
 # Pixel-to-rem
-Pixel-to-rem it's web application for converting values from pixels to rems.
+Pixel-to-rem is a web application for converting values from pixels to rems.
 
 ## Quick Start
 
