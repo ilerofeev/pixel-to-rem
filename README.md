@@ -1,5 +1,5 @@
 # Pixel-to-rem
-Dice-fight it's web application for converting values from pixels to rems.
+Pixel-to-rem it's web application for converting values from pixels to rems.
 
 ## Quick Start
 
